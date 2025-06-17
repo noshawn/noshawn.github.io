@@ -2,9 +2,60 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Hell</title>
+  <title>profile</title>
+  <style>
+  body {
+    margin: 0;
+    text-align: center;
+    font-family: serif;
+    background-color: white; /* ← 白底 */
+    position: relative;
+    z-index: 0;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: url('/assets/backgrond_home.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.4; /* ← 圖層只有 10% 可見 */
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  .content {
+    padding: 2em;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 40%;
+    height: auto;
+    border: 1px solid #000;
+  }
+</style>
+
 </head>
-<body>
-  profile
+<body style="background-color: white; font-family: serif; padding: 2em; max-width: 600px; margin: auto;">
+
+ <div style="text-align: left;">
+  <img src="/assets/tops/profile.png" alt="profile 標題圖片" style="width: 300px; height: auto;">
+</div>
+
+  <p>李想</p>
+  <p>born in hong kong ( not a real place ) , live in taipei ( also not a real place ) </p>
+
+  <p>
+     <strong>酸腦 Acid Brain, 聽天湯 Tin Ten Tan</strong><br>
+  </p>
+
+  <hr>
+
+  <p style="text-align: right; font-size: small;">最終更新日：2025年6月17日</p>
+
 </body>
 </html>
