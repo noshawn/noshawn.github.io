@@ -4,14 +4,15 @@
   <meta charset="UTF-8">
   <title>live gigs</title>
   <style>
-    body {
-      font-family: serif;
-      padding: 2em;
-      background-color: white;
-      position: relative;
-      z-index: 0;
-    }
-    body::before {
+  body {
+    margin: 0;
+    font-family: serif;
+    background-color: white;
+    position: relative;
+    z-index: 0;
+  }
+
+   body::before {
       content: "";
       position: fixed;
       inset: 0;
@@ -19,25 +20,47 @@
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
-      opacity: 0.1;
+      opacity: 0.4;
       z-index: -1;
       pointer-events: none;
     }
-    table {
-      background-color: white;
-    }
-  </style>
+
+  .content {
+    padding: 2em;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .gigs-table {
+    border-collapse: collapse;
+    background-color: white;
+  }
+
+  .gigs-table th,
+  .gigs-table td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+  }
+</style>
+
+
 </head>
 <body>
-  <h1>live gigs</h1>
+   <div class="content">
 
-  <table border="1" cellpadding="6" cellspacing="0">
-    <tr>
-      <th>日期</th>
-      <th>樂團</th>
-      <th>演出名稱</th>
-      <th>地點</th>
-    </tr>
+    <div style="text-align: left;">
+  <img src="/assets/tops/live gigs.png" alt="opuses 標題圖片" style="width: 300px; height: auto;">
+</div>
+
+  <table class="gigs-table">
+  <tr>
+    <th>日期</th>
+    <th>樂團</th>
+    <th>演出名稱</th>
+    <th>地點</th>
+  </tr>
 
     <!-- 2025 -->
     <tr><td>2025/6/28</td><td>Acid Brain</td><td>บางกอกPOST25</td><td>曼谷</td></tr>
